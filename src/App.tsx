@@ -11,6 +11,9 @@ import HtmlVsReactTags from "./HtmlVsReactTags";
 import ComponentWithProps from "./ComponentWithProps";
 import RenderingList from "./RenderingList";
 import Dropdown from "./Dropdown";
+import StateAsSnapshot from "./StateAsSnapshot";
+import QueueingEvent from "./QueueingEvent";
+import SpreadOperator from "./SpreadOperator";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -46,6 +49,15 @@ function App() {
                 <li>
                   <Link to="/dropdown">Dropdown</Link>
                 </li>
+                <li>
+                  <Link to="/stateassnapshot">State As Snapshot</Link>
+                </li>
+                <li>
+                  <Link to="/queueingevent">Queueing Event</Link>
+                </li>
+                <li>
+                  <Link to="/spreadoperator">Spread Operator</Link>
+                </li>
               </ul>
             </nav>
             <Routes>
@@ -57,6 +69,9 @@ function App() {
               <Route path="/passingprops" Component={ComponentWithProps} />
               <Route path="/renderinglist" Component={RenderingList} />
               <Route path="/dropdown" Component={Dropdown} />
+              <Route path="/stateassnapshot" Component={StateAsSnapshot} />
+              <Route path="/queueingevent" Component={QueueingEvent} />
+              <Route path="/spreadoperator" Component={SpreadOperator} />
               <Route Component={NotFound} />
             </Routes>
           </div>
