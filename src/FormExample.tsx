@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const FormExample = () => {
   // Define state variables to hold form data
